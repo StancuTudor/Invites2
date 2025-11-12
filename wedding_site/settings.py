@@ -29,7 +29,8 @@ DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'invites-wbd6.onrender.com'
+    'invites-wbd6.onrender.com',
+    'wedding-invites.alwaysdata.net',
 ]
 
 # Application definition
@@ -83,7 +84,7 @@ WSGI_APPLICATION = 'wedding_site.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default=f"postgres://postgres:7m3ny4j2Zk@localhost:5432/wedding_db")
+    'default': dj_database_url.config(default=f"postgres://postgres:GtN#s.ceVy!7ydK@postgresql-wedding-invites.alwaysdata.net:5432/wedding-invites_wedding-db")
 }
 
 
