@@ -87,8 +87,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'wedding-invites_wedding-db',
-        'USER': 'postgres',
-        'PASSWORD': 'GtN#s.ceVy!7ydK', 
+        'USER': 'wedding-invites',
+        'PASSWORD': 'GtN#s.ceVy!7ydK',
         'HOST': 'postgresql-wedding-invites.alwaysdata.net',
         'PORT': '5432',
     }
