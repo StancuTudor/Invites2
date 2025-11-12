@@ -84,7 +84,14 @@ WSGI_APPLICATION = 'wedding_site.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default=f"postgres://postgres:GtN#s.ceVy!7ydK@postgresql-wedding-invites.alwaysdata.net:5432/wedding-invites_wedding-db")
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'wedding-invites_wedding-db',
+        'USER': 'postgres',
+        'PASSWORD': 'GtN#s.ceVy!7ydK', 
+        'HOST': 'postgresql-wedding-invites.alwaysdata.net',
+        'PORT': '5432',
+    }
 }
 
 
